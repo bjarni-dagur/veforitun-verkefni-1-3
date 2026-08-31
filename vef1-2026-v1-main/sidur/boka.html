@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="is">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ímsar ferðir</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Saga ferðaþjónustufyrirtækisins</h1>
+
+      <p><a href="#efni">Beint í efni</a></p>
+
+      <nav>
+        <ul>
+          <li><a href="../index.html">Forsíða</a></li>
+          <li><a href="ferðir.html">Ferðir</a></li>
+          <li><strong>Bóka ferð</strong></li>
+          <li><a href="um.html">Um okkur</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="efni">
+      <h2>Bókaðu ferð hjá okkur</h2>
+      <p>
+        Hér getur þú bókað ferð hjá okkur. Fylltu út formið hér fyrir neðan og
+        við munum hafa samband við þig eins fljótt og auðið er.
+      </p>
+
+      <form action="boka.html" method="post">
+        <label for="ferð">Veldu ferð:</label>
+        <select id="ferð" name="ferð" required>
+          <option value="">Veldu ferð</option>
+          <option value="joklaklifur">Jöklaklifur</option>
+          <option value="köfunarferð">Köfunarferð</option>
+          <option value="róleg gaunguferð">
+            Róleg gaunguferð á Suðurlandi
+          </option>
+          <option value="gullnihringurinn">Gullnihringurinn</option>
+          <option value="silfurkassinn">Silfurkassinn</option>
+          <option value="bronsþríhyrningurinn">Brósþríhyrningurinn</option>
+          <option value="Norðurljósaferð">Norðurljósaferð</option>
+          <option value="Reykjavíkurrölt">Reykjavíkurrölt</option>
+        </select>
+
+        <label for="fjöldi">Fjöldi í hóp:</label>
+        <input
+          type="number"
+          id="fjöldi"
+          name="fjöldi"
+          min="1"
+          max="10"
+          required
+        />
+        <label for="uplisingar">Uplisingar um hóp:</label>
+        <input type="text" id="uplisingar" name="uplisingar" required />
+        <label for="netfang">Netfang:</label>
+        <input type="email" id="netfang" name="netfang" required />
+        <label for="símanúmer">Símanúmer:</label>
+        <input type="tel" id="símanúmer" name="símanúmer" />
+
+        <label for="dagsetning">Dagsetning:</label>
+        <input type="date" id="dagsetning" name="dagsetning" required />
+        <label for="tímasetning">Tímasetning:</label>
+        <select id="tímasetning" name="tímasetning" required>
+          <option value="">Veldu tímasetningu</option>
+          <option value="fyrir hádeigi">Fyrir hádeigi</option>
+          <option value="eftir hádeigi">Eftir hádeigi</option>
+          <option value="kvöld">Kvöld</option>
+        </select>
+
+        <label for="samþykji skilmála">Samþykki skilmála:</label>
+        <input
+          type="checkbox"
+          id="samþykki skilmála"
+          name="samþykki skilmála"
+          required
+        />
+
+        <button type="submit">Senda</button>
+      </form>
+      <p><a href="../index.html">Aftur á forsíðu</a>.</p>
+    </main>
+
+    <footer>
+      <h1>Hafðu samband</h1>
+
+      <h2>Opnunartímar</h2>
+
+      <h3>Skrifstofur</h3>
+
+      <ul>
+        <li>Mánudagur - Föstudagur: 09:00 - 17:00</li>
+        <li>Laugardagur: 10:00 - 14:00</li>
+        <li>Sunnudagur: Lokað</li>
+      </ul>
+
+      <h3>Samfélagsmiðlar</h3>
+      <ul>
+        <li><a href="https://www.facebook.com/islenskarferdir">Facebook</a></li>
+        <li><a href="https://twitter.com/islenskarferdir">Twitter</a></li>
+        <li>
+          <a href="https://www.instagram.com/islenskarferdir">Instagram</a>
+        </li>
+      </ul>
+
+      <h2>Haftu samband</h2>
+      <dl>
+        <dt>Heimilisfang</dt>
+        <dd>Ferðagata 1</dd>
+        <dt>Sími</dt>
+        <dd>234-2345</dd>
+      </dl>
+    </footer>
+  </body>
+</html>
